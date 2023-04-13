@@ -1,0 +1,18 @@
+<!-- We can send content i.e. html content from parent to child we use ng-content -->
+<h1>1.Ng-Content</h1>
+<hr>
+<h1>This is Parent Component</h1>
+<br><br>
+<h1>Sended a content from parent component</h1>
+<hr>
+<app-child>
+  <h1>Recived to child component</h1>
+  <h1>My Name is Nirmit</h1>
+  <!-- Multipile content to send -->
+
+  <h1 channelName>I am studying angular</h1>
+</app-child>
+
+<div *ngFor="let number of numbers">
+  <ng-container *ngIf="number%2===0">{{number}}</ng-container>
+</div>
